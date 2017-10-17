@@ -1,0 +1,18 @@
+---
+title: "Week2 Assignment"
+author: "Gustavo"
+date: "October 17th 2017"
+output: ioslides_presentation
+---
+
+## Many Markers for Assigment
+```{r, echo = FALSE}
+library(leaflet)
+set.seed(2017-11-10)
+df <- data.frame(lat = runif(20,min = -22.9, max= -22.8), 
+                 lng = runif(20, min = -43.4, max = -43.2))
+
+addMarkers(addTiles(leaflet(df)))
+
+```
+
